@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+
+    <style>
+      .first_container {
+        background-image: url("https://source.unsplash.com/1400x900/?music/guitar");
+        height: 890px;
+        /* width: 100%; */
+        display: flex;
+        min-width: 275px;
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        align-items: center;
+        text-align: center;
+        flex-flow: column;
+      }
+
+      /* h1 {
+        display: block;
+        translate: 70% 30%;
+      } */
+      .first-heading {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* margin-left: 20px; */
+        margin-top: 350px;
+        min-width: 100px;
+        font-family: sans-serif;
+      }
+      .Second_container {
+        background-image: url("https://source.unsplash.com/1400x900/?music/classic");
+        height: 890px;
+        /* width: 100%; */
+        display: flex;
+        min-width: 275px;
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        align-items: center;
+        text-align: center;
+        flex-flow: column;
+      }
+      .Second-heading {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* margin-left: 20px; */
+        margin-top: 350px;
+        min-width: 100px;
+        font-family: sans-serif;
+      }
+      .Third_container {
+        background-image: url("https://source.unsplash.com/1400x900/?Traditional/instrument");
+        height: 890px;
+        /* width: 100%; */
+        display: flex;
+        min-width: 275px;
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+        align-items: center;
+        text-align: center;
+        flex-flow: column;
+      }
+      .Third-heading {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* margin-left: 20px; */
+        margin-top: 350px;
+        min-width: 100px;
+        font-family: sans-serif;
+      }
+      footer{
+        width: 100%;
+        background-color: darkslategrey;
+        /* min-height: 140px; */
+        /* max-height: 300px; */
+        display: flex;
+        gap: 80px;
+        min-width: 40px;
+        
+       }
+
+
+      h3{
+        color: white;
+      }
+      .list-first,.list-second,.list-third,.list-fourth{
+        margin-left: 100px;
+        padding-top: 20px;
+        color: white;
+        display:block;
+        flex-flow: row;
+        min-width: 40px;
+
+      } 
+      
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand text-info" href="#">Heart Tune </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-dark" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item text-dark">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Tune's
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#third">Traditional</a></li>
+                <li><a class="dropdown-item" href="#second">Classic</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">History of Music</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Contact us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success text-light" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    
+      <div class="container-fluid">
+        <a class="navbar-brand  text-light"  href="#">Heart Tunes</a>
+        <button class="navbar-toggler" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-info" aria-current="page" href="#" >  Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="#">Music</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="#second"  >Classic</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-info" href="#third">Traditional</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+    <div class="first_container">
+   
+      <div class="first-heading">
+        <h1 style="color: rgb(114, 174, 231); margin: 30px">Rhythm of Heart</h1>
+      </div>
+      <br />
+      <br />
+      <p style="display: flex; margin-top: 10px; color: white">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aliquam
+        <br />
+        atque saepe in culpa? Numquam voluptates officiis quas, porro facilis,
+        <br />
+        saepe qui voluptas aspernatur in tempora rem aliquid optio omnis. <br />
+        Architecto iusto perferendis nihil corporis ad porro possimus tenetur,
+        <br />
+        consequatur maiores sequi labore provident quod distinctio inventore
+        <br />
+        perspiciatis. Magni ipsam veritatis atque illo quo delectus neque <br />
+        nesciunt explicabo id facere!
+      </p>
+      <button type="button" class="btn btn-primary opacity-75">Read more..</button>
+    </div>
+
+    <div class="Second_container">
+      <!-- <img
+        src="https://source.unsplash.com/1500x1000/?music/Classic"
+        class="img-fluid"
+        alt="first"
+      /> -->
+      <div class="Second-heading" id="second">
+        <h1 style="color: white; margin: 30px">Classic</h1>
+      </div>
+      <br />
+      <br />
+      <p style="display: flex; margin-top: 10px; color: white">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aliquam
+        <br />
+        atque saepe in culpa? Numquam voluptates officiis quas, porro facilis,
+        <br />
+        saepe qui voluptas aspernatur in tempora rem aliquid optio omnis. <br />
+        Architecto iusto perferendis nihil corporis ad porro possimus tenetur,
+        <br />
+        consequatur maiores sequi labore provident quod distinctio inventore
+        <br />
+        perspiciatis. Magni ipsam veritatis atque illo quo delectus neque <br />
+        nesciunt explicabo id facere!
+      </p>
+      <button type="button" class="btn btn-primary opacity-75 btn-outline-dark text-light">Read more..</button>
+    </div> 
+    </div>
+    <div class="Third_container" id="third">
+       
+        <div class="Third-heading">
+          <h1 style="color: white; margin: 30px">Traditional Tune's</h1>
+        </div>
+        <br />
+        <br />
+        <p style="display: flex; margin-top: 10px; color: white">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id aliquam
+          <br />
+          atque saepe in culpa? Numquam voluptates officiis quas, porro facilis,
+          <br />
+          saepe qui voluptas aspernatur in tempora rem aliquid optio omnis. <br />
+          Architecto iusto perferendis nihil corporis ad porro possimus tenetur,
+          <br />
+          consequatur maiores sequi labore provident quod distinctio inventore
+          <br />
+          perspiciatis. Magni ipsam veritatis atque illo quo delectus neque <br />
+          nesciunt explicabo id facere!
+        </p>
+        <button type="button" class="btn btn-primary opacity-75">Read more..</button>
+      </div> 
+      </div>
+      <br>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://source.unsplash.com/1500x890/?music/Features" class="card-img-top" alt="Featuresimg">
+            <div class="card-body">
+              <h5 class="card-title">Features</h5>
+              <p class="card-text text-$orange"> There is many Features of music like ,Sound (timbre, pitch, duration, amplitude, overtone),Melody,Harmony,Rhythm,Structure or Form,Texture,Expresion(dynamics,tempo).</p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-primary"> <a href="#" style="color:white; text-decoration: none;">Read more..</a> </button>
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://source.unsplash.com/1500x890/?music/popup" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pop-up</h5>
+              <p class="card-text text-$orange">They have a good rhythm, a catchy melody, and are easy to remember and sing along to. They usually have a chorus that's repeated several times and two or more verses. 
+                Most pop songs are between two and five minutes long, and the lyrics are usually about the joys and problems of love and relationships.</p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-primary"> <a href="#" style="color:white; text-decoration: none;">Read more..</a> </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://source.unsplash.com/1500x890/?music/Rock" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Rock Beats</h5>
+              <p class="card-text text-$orange">Rock music is usually in 4/4 time and most songs use a verse-chorus structure. It is usually performed by bands that include the electric guitar, bass guitar and drums, and with at least one singer.
+                 Lyrics in rock music can be based on many topics, but will often include subjects such as love, society and politics. </p>
+            </div>
+            <div class="card-footer">
+              <button type="button" class="btn btn-primary"> <a href="#" style="color:white; text-decoration: none;">Read more..</a> </button>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+     <br>
+
+       <footer>
+<div class="list-first">
+  <h3>Counubia</h3> 
+    <ul>
+        <li>Tellus Sed</li>
+        <li>Counubia Nostra</li>
+        <li>Quis Sem</li>
+        <li> Arcu Eget</li>
+        <li>Integer Noc</li>
+        <li>Music Mania</li>
+    </ul>
+</div>
+<div class="list-second">
+  <h3>Dignissm</h3>
+  
+  <ul>
+      <li>Augue</li>
+      <li>Arou Egot</li>
+      <li>Integer Noc</li>
+      <li>Music Mania</li>
+      <li>Quis Sem</li>
+      <li>Counubia Nostra</li>
+  </ul>
+</div>
+<div class="list-third">
+  <h3>Vestibulum</h3>
+  
+  <ul>
+      <li>Integer Noc</li>
+      <li>Music Mania</li>
+      <li>Quis Sem</li>
+      <li>Counubia Nostra</li>
+      <li>Arou Egot</li>
+      <li>Augue</li>
+  </ul>
+</div>
+<div class="list-fourth">
+  <h3 >integer Nac</h3>
+  
+  <ul>
+      <li>Arou Egot</li>
+      <li>Counubia Nostra</li>
+      <li>Augue</li>
+      <li>Quis Sem</li>
+      <li>Music Mania</li>
+      <li>Integer Noc</li>
+  </ul>
+</div>
+
+      </footer> 
+
+
+
+      
+  </body>
+</html>
